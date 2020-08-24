@@ -21,6 +21,6 @@ public class PostmanEcho {
                 .log().all()
                 .statusCode(200)
                 .body("data", equalTo("some data"))
-                .body("headers.user-agent", equalTo("Apache-HttpClient/4.5.3 (Java/11.0.7)"));
+                .body("headers.user-agent", equalTo("Apache-HttpClient/4.5.3 (Java/11.0.8)"));
     }
 }
