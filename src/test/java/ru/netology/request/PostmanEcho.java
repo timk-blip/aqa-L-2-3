@@ -19,7 +19,7 @@ public class PostmanEcho {
 
                 .baseUri("https://postman-echo.com")
 
-                .body("Good morning") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Good day") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
@@ -27,6 +27,6 @@ public class PostmanEcho {
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body("data", equalTo("Good evening"));
+                .body("data", equalTo("Good day"));
     }
 }
